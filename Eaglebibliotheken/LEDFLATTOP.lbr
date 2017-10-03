@@ -77,6 +77,26 @@
 <wire x1="-1.5" y1="-1" x2="-1.5" y2="1" width="0.127" layer="21" curve="288.970408"/>
 <smd name="-" x="-1.75" y="0" dx="2.5" dy="1" layer="1"/>
 </package>
+<package name="5MM_FLAT/DIP_SMDLED">
+<description>&lt;b&gt;5mm LED SMD footprint&lt;/b&gt;&lt;p&gt;</description>
+<smd name="-" x="-2.75" y="0" dx="3.5" dy="1.5" layer="1"/>
+<text x="-3.39" y="3.63" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.425" y="-4.885" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.5" x2="-2.5" y2="1.5" width="0.127" layer="21" curve="298.072487"/>
+<pad name="+" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+</package>
+<package name="3MM_FLAT/DIP_SMDLED">
+<description>&lt;b&gt;3mm LED SMD footprint&lt;/b&gt;&lt;p&gt;</description>
+<text x="-3.24" y="1.98" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.275" y="-3.235" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-0.1" y="0" radius="1.4142125" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1.5" y2="1" width="0.127" layer="21" curve="288.970408"/>
+<smd name="-" x="-1.75" y="0" dx="2.5" dy="1" layer="1"/>
+<pad name="+" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -112,7 +132,7 @@
 <gate name="G$1" symbol="LED" x="-2.54" y="7.62"/>
 </gates>
 <devices>
-<device name="3MM" package="3MM_FLAT_SMDLED">
+<device name="3MM_SMD" package="3MM_FLAT_SMDLED">
 <connects>
 <connect gate="G$1" pin="A" pad="+"/>
 <connect gate="G$1" pin="C" pad="-"/>
@@ -121,7 +141,25 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="5MM" package="5MM_FLAT_SMDLED">
+<device name="5MM_SMD" package="5MM_FLAT_SMDLED">
+<connects>
+<connect gate="G$1" pin="A" pad="+"/>
+<connect gate="G$1" pin="C" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3MM_SMD/DIP" package="3MM_FLAT/DIP_SMDLED">
+<connects>
+<connect gate="G$1" pin="A" pad="+"/>
+<connect gate="G$1" pin="C" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM_SMD/DIP" package="5MM_FLAT/DIP_SMDLED">
 <connects>
 <connect gate="G$1" pin="A" pad="+"/>
 <connect gate="G$1" pin="C" pad="-"/>
