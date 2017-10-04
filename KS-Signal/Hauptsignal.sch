@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4453,12 +4452,9 @@ www.irf.com / irlml5203.pdf</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="X1" gate="-2" pin="1"/>
 <pinref part="X2" gate="-2" pin="1"/>
-<wire x1="223.52" y1="55.88" x2="261.62" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="55.88" x2="265.43" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="55.88" x2="261.62" y2="60.96" width="0.1524" layer="91"/>
-<junction x="261.62" y="55.88"/>
 <label x="261.62" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
@@ -4536,6 +4532,13 @@ www.irf.com / irlml5203.pdf</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="-25.4" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<pinref part="X1" gate="-2" pin="1"/>
+<wire x1="223.52" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<label x="226.06" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
