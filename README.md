@@ -1,3 +1,6 @@
-# signals
+# Signals
 
-Es ist viel zu tun
+TODO:  
+- Quarz auf Signalplatinen einfügen
+- Buckconverter-Spannungsversorgungsplatine
+- Optokopplerplatine
